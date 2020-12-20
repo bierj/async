@@ -231,7 +231,7 @@ namespace bierj { namespace qt
         <
             class Sender,
             class PointerToMemberFn,
-            class... Cont2Params,
+            class... Cont2Params
         >
         auto until(std::shared_ptr<Sender> sender, Signal signal)
         {
@@ -265,7 +265,7 @@ namespace bierj { namespace qt
 
         // disconnects the async connection once the given predicate returns true
         template<class Predicate>
-        void until(Pred &&pred)
+        void until(Predicate &&pred)
         {
             // capture a copy of the executor pointer by value
             // because *this may not be valid when the continuation runs

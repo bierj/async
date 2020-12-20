@@ -882,17 +882,17 @@ namespace bierj
     }
 }
 
-template<> struct std::hash<bier::any_channel>
+template<> struct std::hash<bierj::any_channel>
 {
-    size_t operator ()(const bier::any_channel &ch) const noexcept
+    size_t operator ()(const bierj::any_channel &ch) const noexcept
     {
         return ch.hash();
     }
 };
 
-template<> struct std::less<bier::any_channel>
+template<> struct std::less<bierj::any_channel>
 {
-    bool operator ()(const bier::any_channel &a, const bier::any_channel &b) const
+    bool operator ()(const bierj::any_channel &a, const bierj::any_channel &b) const
     {
         return a < b;
     }
