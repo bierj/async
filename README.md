@@ -1,4 +1,4 @@
-Asynchronous library for C++14 and greater.
+Asynchronous library for C++17
 ===
 
 Includes:
