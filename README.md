@@ -2,6 +2,6 @@ Asynchronous library for C++14 and greater.
 ===
 
 Includes:
-* CSP-style buffered and unbuffered channels made popular by Golang (including a blocking select function)
+* CSP-style buffered and unbuffered channels made popular by Golang (including a select operator)
 * threadpools
-* async constructs using channels for Qt 4+ providing functionality similar to qt_promise
+* async constructs for Qt
